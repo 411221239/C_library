@@ -10,7 +10,7 @@ int main () {
    double x, ret;
 
    x = 2.7; //預計計算的真數
-   ret = cos(x*val);
+   ret = log(x*val);
    printf("log( %lf ) = %lf", x, ret);
    
    return(0);
