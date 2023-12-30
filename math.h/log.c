@@ -1,4 +1,6 @@
-/* 用法 double log(double x) 
+/* 回傳x的自然對數，即是ln x
+
+  用法 double log(double x) 
 
   x -- 是浮點數值。 */
 
