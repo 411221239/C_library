@@ -1,4 +1,6 @@
-/* 用法 double log10(double x) 
+/* 回傳以10為底的x的對數
+
+  用法 double log10(double x) 
 
   x -- 是浮點數值。 */
 
