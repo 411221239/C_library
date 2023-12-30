@@ -1,4 +1,6 @@
-/* 用法 double cos(double x) 
+/* 回傳x的餘弦值 
+
+  用法 double cos(double x) 
 
   x -- 這是表示以弧度表示的角度的浮點數值。 */
 
