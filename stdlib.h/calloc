@@ -1,0 +1,45 @@
+/*
+  C庫函數void *calloc(size_t nitems, size_t size)用於分配所需的內存並返回指向它的指針。malloc和calloc的區別在於malloc不將內存設置為零，而calloc將分配的內存設置為零。
+
+  用法：void *calloc(size_t nitems, size_t size);
+
+  nitems − 要分配的元素數量。
+
+  size − 元素的大小。
+
+  返回值：該函數返回指向分配的內存的指針，如果請求失敗則返回NULL。
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+   int i, n;
+   int *a;
+
+   printf("要輸入的元素數量：");
+   scanf("%d",&n);
+
+   a = (int*)calloc(n, sizeof(int));
+   printf("輸入%d個數字：\n",n);
+   for( i=0 ; i < n ; i++ ) {
+      scanf("%d",&a[i]);
+   }
+
+   printf("輸入的數字為：");
+   for( i=0 ; i < n ; i++ ) {
+      printf("%d ",a[i]);
+   }
+   free( a );
+   
+   return(0);
+}
+// 結果
+/*
+要輸入的元素數量：3
+輸入3個數字：
+22
+55
+14
+輸入的數字為：22 55 14
+*/
