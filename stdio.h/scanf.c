@@ -15,13 +15,13 @@
 
   fscanf 類型規定符
   type	Qualifying Input	Type of argument
-  c    Single character: Reads the next character. If a width different from 1 is specified, the function reads width characters and stores them in the successive locations of the array passed as argument. No null character is appended at the end.	char *
-  d    Decimal integer: Number optionally preceded with a + or - sign	int *
-  e, E, f, g, G    Floating point: Decimal number containing a decimal point, optionally preceded by a + or - sign and optionally followed by the e or E character and a decimal number. Two examples of valid entries are -732.103 and 7.12e4	float *
-  o    Octal Integer:	int *
-  s    String of characters. This will read subsequent characters until a whitespace is found (whitespace characters are considered to be blank, newline and tab).	char *
-  u    Unsigned decimal integer.	unsigned int *
-  x, X    Hexadecimal Integer	int *
+  c    單一字符：讀取下一個字符。如果指定的寬度與1不同，則函數將讀取寬度個字符並將它們存儲在作為參數傳遞的數組的連續位置中。不附加空字符。	char *
+  d    十進制整數：數字可選地以+或-號開頭。	int *
+  e, E, f, g, G    浮點數：包含小數點的十進制數字，可選地以+或-號開頭，並可選地跟有e或E字符和十進制數字。有效輸入的兩個示例是-732.103和7.12e4。	float *
+  o    八進制整數：	int *
+  s    字符串。這將讀取後續字符，直到找到空格為止（空格字符被視為空格、換行和制表符）。	char *
+  u    無符號十進制整數。	unsigned int *
+  x, X    十六進制整數	int *
   附加參數 − 根據格式字符串，函數可能期望一系列附加參數，每個參數都包含一個值，以替換格式參數（如果有的話）。這些參數的數量應該與格式參數中希望有一個值的 %-tag 數量相同。
 
   返回值：成功時，函數返回成功讀取的參數列表項目數量。如果發生讀取錯誤或在讀取時達到文件結尾，則設置適當的指示器（feof 或 ferror），如果在成功讀取任何數據之前發生其中之一，則返回 EOF。
