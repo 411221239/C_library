@@ -23,8 +23,8 @@ int main () {
    fclose(fp);
    
    return(0);
-}
-// 編譯並運行上面的程序將在嘗試打開不存在的 nofile.txt 文件時產生以下結果 -
+} 
+
 // 結果
 /*
 嘗試打開 nofile.txt                                                    
