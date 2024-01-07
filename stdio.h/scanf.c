@@ -45,7 +45,7 @@ int main () {
    
    return(0);
 }
-// 在交互模式下，編譯並運行上述程序將產生以下結果：
+//結果
 /*
 輸入名字：admin
 輸入您的網站名稱：www.tutorialspoint.com
