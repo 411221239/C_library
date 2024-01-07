@@ -26,6 +26,7 @@ int main () {
    return(0);
 }
 
-/* 結果
+//結果
+/* 
 This is string.h library function
 $$$$$$$ string.h library function */
